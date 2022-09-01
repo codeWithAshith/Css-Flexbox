@@ -7,8 +7,16 @@
 /* flex container */
 
 .flex-container {
+  display: flex;
   background-color: aqua;
+  justify-content: end;
+  /* justify-content: center;
+  justify-content: start;
+  justify-content: space-around;
+  justify-content: space-between; */
 }
+
+/* flex item */
 
 .item {
   height: 100px;
