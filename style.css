@@ -7,15 +7,7 @@
 /* flex container */
 
 .flex-container {
-    /* to use justify-content, we require height */
-  height: 500px;
   display: flex;
-  /* flex-direction: row-reverse; */
-  flex-direction: column;
-  /* main axis is the y axis now so justify content align in y axis and not in x axis. */
-  justify-content: space-between;
-  /* alway align items aligns in cross axis, now the cross axis is x axis as the flex direction os columns */
-  align-items: flex-start;
   background-color: aqua;
 }
 
@@ -27,4 +19,7 @@
   background-color: blue;
   color: white;
   margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
