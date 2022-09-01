@@ -7,19 +7,16 @@
 /* flex container */
 
 .flex-container {
-  /* height is mandatory as align items requires space */
-  height: 400px;
+    /* to use justify-content, we require height */
+  height: 500px;
   display: flex;
-  background-color: aqua;
+  /* flex-direction: row-reverse; */
+  flex-direction: column;
+  /* main axis is the y axis now so justify content align in y axis and not in x axis. */
   justify-content: space-between;
-  /* align-items: center; */
-  /* align-items: flex-start; */
-  /* align-items: flex-end; */
-
-  /* align-items: stretch; */
-
-  /* refer image */
-  align-items: baseline;
+  /* alway align items aligns in cross axis, now the cross axis is x axis as the flex direction os columns */
+  align-items: flex-start;
+  background-color: aqua;
 }
 
 /* flex item */
@@ -30,17 +27,4 @@
   background-color: blue;
   color: white;
   margin: 10px;
-}
-
-/* to make on item in different position */
-.item:nth-child(3) {
-  align-self: flex-end;
-}
-
-.item:nth-child(2) {
-  align-self: center;
-}
-
-.item:nth-child(1) {
-  align-self: flex-start;
 }
