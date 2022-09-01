@@ -31,3 +31,16 @@
   color: white;
   margin: 10px;
 }
+
+/* to make on item in different position */
+.item:nth-child(3) {
+  align-self: flex-end;
+}
+
+.item:nth-child(2) {
+  align-self: center;
+}
+
+.item:nth-child(1) {
+  align-self: flex-start;
+}
