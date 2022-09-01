@@ -9,8 +9,6 @@
 .flex-container {
   display: flex;
   background-color: aqua;
-  /* to remove wrapping of space - default nowrap*/
-  flex-wrap: wrap;
 }
 
 /* flex item */
@@ -24,4 +22,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.item:nth-child(1) {
+  order: 2;
+}
+
+.item:nth-child(2) {
+  order: 3;
+}
+
+.item:nth-child(3) {
+  order: 1;
 }
