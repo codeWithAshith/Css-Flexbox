@@ -7,13 +7,19 @@
 /* flex container */
 
 .flex-container {
+  /* height is mandatory as align items requires space */
+  height: 400px;
   display: flex;
   background-color: aqua;
-  justify-content: end;
-  /* justify-content: center;
-  justify-content: start;
-  justify-content: space-around;
-  justify-content: space-between; */
+  justify-content: space-between;
+  /* align-items: center; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+
+  /* align-items: stretch; */
+
+  /* refer image */
+  align-items: baseline;
 }
 
 /* flex item */
