@@ -9,6 +9,8 @@
 .flex-container {
   display: flex;
   background-color: aqua;
+  /* to remove wrapping of space - default nowrap*/
+  flex-wrap: wrap;
 }
 
 /* flex item */
